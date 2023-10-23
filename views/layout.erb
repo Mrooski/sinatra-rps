@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <style>
+      .plays {
+        display: flex;
+        justify-content: space-between
+      }
+    </style>
+
     <title>Sinatra RPS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
   <body>
-
+    <a class="plays" href="/rock">Play Rock</a>
+    <a class="plays" href="/paper">Play Paper</a>
+    <a class="plays" href="/scissors">Play Scissors</a>
+    <div>
     <%= yield %>
-
+    </div>
+    <div>
+    <A href="/">Rules</A>
+    </div>
   </body>
 </html>
